@@ -1,0 +1,9 @@
+﻿@model IEnumerable<MBT.Models.NHAXUATBAN>
+    <div class="list-group">
+        @foreach( var item in Model)
+        {
+            <a href="@Url.Action("SPtheonxb","BookStore", new {id=item.MaNXB})" class="list-group-item">
+                <p>@item.TenNXB</p>
+            </a>
+        }
+    </div>
